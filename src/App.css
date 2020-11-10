@@ -1,0 +1,101 @@
+.App {
+  margin: 15px;
+}
+.list-item {
+  display: flex
+}
+
+.list-group-item {
+  display: flex;
+}
+
+.list-item-avatar {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin-right: 20px;
+  display: block;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.input-header {
+  text-align: left;
+  font-weight: bold;
+  margin: 5px;
+}
+
+input {
+  width: 75%;
+  height: 25px;
+}
+
+select {
+  width: 75%;
+  height: 25px;
+}
+
+.search-sort-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-sort-input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+
+li:nth-child(odd) { background: #F5FAFA; }
+
+@media (min-width:1281px) {
+
+  .user-list {
+    flex-direction: row;
+  }
+
+  input {
+    width: 200px;
+    height: 25px;
+  
+  }
+  
+  select {
+    width: 200px;
+    height: 25px;
+  }
+
+  .list-item-avatar {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .list-item-email {
+    margin-left: auto;
+  }
+
+  .search-sort-input-container {
+    margin-left: auto;
+  }
+
+  .search-sort-input {
+    flex-direction: row;
+  }
+
+  .list-item-info {
+    display: flex;
+    flex-grow: 2;
+  }
+  
+  
+}
+
+

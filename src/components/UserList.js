@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function UserList() {
     const [users, setUsers] = useState([])
@@ -79,15 +80,18 @@ function UserList() {
 
 const renderUsers = (users) => {
     return users.map(user => {
+        const userLink = `/users/${user.id}`
         return (
             <li key={user.id} className="list-group-item">
                 <span className="list-item-avatar"></span>
 
                 <div className="list-item-info">
-                    <div style={{ flexDirection: 'column' }}>
-                        <div className="list-item-name">{user.name}</div>
-                        <div className="list-item-username">{user.username}</div>
-                    </div>
+                    <Link to={userLink}>
+                        <div style={{ flexDirection: 'column' }}>
+                            <div className="list-item-name">{user.name}</div>
+                            <div className="list-item-username">{user.username}</div>
+                        </div>
+                    </Link>
                     <div className="list-item-email">
                         <a href={`mailto:${user.email}`} style={{ marginLeft: 'auto' }}>{user.email}</a>
                     </div>
@@ -98,4 +102,5 @@ const renderUsers = (users) => {
         )
     })
 }
+
 export default UserList;

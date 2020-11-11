@@ -2,7 +2,11 @@
   margin: 15px;
 }
 .list-item {
-  display: flex
+  display: flex;
+}
+
+.card {
+  margin: 10px;
 }
 
 .list-group-item {
@@ -94,6 +98,29 @@ li:nth-child(odd) { background: #F5FAFA; }
     display: flex;
     flex-grow: 2;
   }
+
+  .user-detail-cards {
+    display: flex;
+    text-align: center;
+  }
+
+  .user-detail-cards .card {
+    width: 32%;
+  }
+
+  .user-posts-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .user-posts-cards .card {
+    width: 32%;
+  }
+
+
+
+
   
   
 }
